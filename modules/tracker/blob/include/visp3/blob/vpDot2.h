@@ -59,7 +59,7 @@
 
   \ingroup module_blob
 
-  \brief This tracker is meant to track a blob (connex pixels with same
+  \brief This tracker is meant to track a blob (connects pixels with same
   gray level) on a vpImage.
 
   The underground algorithm is based on a binarisation of the image
@@ -196,13 +196,13 @@ public:
   /*!
     Return the color level of pixels inside the dot.
 
-    \sa getGrayLevelMax()
+    \sa getGrayLevelMin()
   */
   inline unsigned int getGrayLevelMin() const { return gray_level_min; };
   /*!
     Return the color level of pixels inside the dot.
 
-    \sa getGrayLevelMin()
+    \sa getGrayLevelMax()
   */
   inline unsigned int getGrayLevelMax() const { return gray_level_max; };
   double getGrayLevelPrecision() const;
